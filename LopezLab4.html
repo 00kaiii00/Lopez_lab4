@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Lopezstyle.css">
+<title>My Profile</title>
+<meta charset="UTF-8">
+
+<!-- LINK EXTERNAL JS -->
+<script src="scriptkurt.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<center>
+<div id="headerlink">
+<h2>
+<a href="#home">Home</a> |
+<a href="#about">About Me</a> |
+<a href="#home">L1</a> |
+<a href="#about">L2</a>|
+<a href="#home">L3</a> |
+<a href="#about">L4</a>
+</h2>
+</div>
+
+<button id="themeBtn">light/dark mode</button>
+</center>
+<hr>
+
+<!-- 2-COLUMN LAYOUT -->
+<table cellpadding="20">
+<tr>
+
+<!-- LEFT COLUMN -->
+<td valign="top" width="40%">
+
+<div id="home">
+<img src="C:\Users\CL-5 STUDENT 12\Pictures\lopezpic.png" width="200"><br><br>
+
+<h2>Lopez Kurt Matthew G.</h2>
+<h3 id="jobTitle">Web Developer</h3>
+<button id="editJobBtn">Edit Job Title</button>
+</div>
+
+<hr>
+
+<div>
+<h3>Contact</h3>
+<p>Email: lopezkg@students.nu-fairview.edu.ph</p>
+<p>Contact No: 0912 345 6789</p>
+</div>
+
+<hr>
+
+<div id="Hobbies">
+<h3>Hobbies</h3>
+<ul>
+<li>Online Games</li>
+<li>Programming</li>
+<li>Watching movies</li>
+</ul>
+</div>
+
+<hr>
+
+<button id="toggleSkillsBtn">Hide Skills</button>
+
+<div id="skillsSection">
+<h3>Skills</h3>
+<ul>
+<li>Web development</li>
+<li>Back end programming</li>
+<li>Web Designing</li>
+</ul>
+
+<dl>
+<h3>Frontend</h3>
+<dd>HTML</dd>
+<dd>CSS</dd>
+<dd>JavaScript</dd>
+</dl>
+</div>
+
+</td>
+
+<!-- RIGHT COLUMN -->
+<td valign="top" width="60%">
+
+<div id="about">
+<h2>About Me</h2>
+<p>
+Hello! I’m Kurt Matthew G. Lopez — a renowned Web Developer. Welcome to my profile!
+</p>
+</div>
+
+<hr>
+
+<h2>Achievements</h2>
+<ul>
+<li>Dean’s Lister</li>
+<li>Degree Holder</li>
+<li>Employee of the Year</li>
+</ul>
+
+<h2>Education</h2>
+<ul>
+<li><strong>BSIT – Mobile and Internet</strong></li>
+</ul>
+
+<hr>
+
+<!-- MESSAGE FORM -->
+<div>
+<h2>Message Me</h2>
+
+<form>
+<p>
+Name:<br>
+<input type="text" id="nameField">
+</p>
+
+<p>
+Email:<br>
+<input type="email" id="emailField">
+</p>
+
+<p>
+Message:<br>
+<textarea id="msgBox" maxlength="200"></textarea>
+</p>
+
+<p>Characters left: <span id="counter">200</span></p>
+
+<p>
+<input type="submit" value="Send" onclick="return validateForm()">
+</p>
+</form>
+</div>
+
+</td>
+</tr>
+</table>
+
+<hr>
+
+<!-- EXTRA FEATURE -->
+<center>
+<p id="greeting"></p>
+</center>
+
+<!-- FOOTER -->
+<div class="footer">
+<p id="dateDisplay" align="center"></p>
+</div>
+
+</body>
+</html>
